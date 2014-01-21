@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC6D26CB-507C-44D4-A07A-D45117030DA3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ACCESO_DATOS</RootNamespace>
+    <AssemblyName>ACCESO_DATOS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cliente.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cliente.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Documentos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Documentos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EMPLEADO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EMPLEADO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IngresoProducto.cs">
+      <DependentUpon>IngresoProducto.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IngresoProducto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IngresoProducto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Pago.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Pago.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Producto.cs">
+      <DependentUpon>Producto.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Producto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Producto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Proveedor.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SalidaProducto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalidaProducto.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario.cs">
+      <DependentUpon>Usuario.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Usuario.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Usuario.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Cliente.xsc">
+      <DependentUpon>Cliente.xsd</DependentUpon>
+    </None>
+    <None Include="Cliente.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cliente.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Cliente.xss">
+      <DependentUpon>Cliente.xsd</DependentUpon>
+    </None>
+    <None Include="Documentos.xsc">
+      <DependentUpon>Documentos.xsd</DependentUpon>
+    </None>
+    <None Include="Documentos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Documentos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Documentos.xss">
+      <DependentUpon>Documentos.xsd</DependentUpon>
+    </None>
+    <None Include="EMPLEADO.xsc">
+      <DependentUpon>EMPLEADO.xsd</DependentUpon>
+    </None>
+    <None Include="EMPLEADO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EMPLEADO.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="EMPLEADO.xss">
+      <DependentUpon>EMPLEADO.xsd</DependentUpon>
+    </None>
+    <None Include="IngresoProducto.xsc">
+      <DependentUpon>IngresoProducto.xsd</DependentUpon>
+    </None>
+    <None Include="IngresoProducto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IngresoProducto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="IngresoProducto.xss">
+      <DependentUpon>IngresoProducto.xsd</DependentUpon>
+    </None>
+    <None Include="Pago.xsc">
+      <DependentUpon>Pago.xsd</DependentUpon>
+    </None>
+    <None Include="Pago.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Pago.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Pago.xss">
+      <DependentUpon>Pago.xsd</DependentUpon>
+    </None>
+    <None Include="Producto.xsc">
+      <DependentUpon>Producto.xsd</DependentUpon>
+    </None>
+    <None Include="Producto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Producto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Producto.xss">
+      <DependentUpon>Producto.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Proveedor.xsc">
+      <DependentUpon>Proveedor.xsd</DependentUpon>
+    </None>
+    <None Include="Proveedor.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Proveedor.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Proveedor.xss">
+      <DependentUpon>Proveedor.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes.xsc">
+      <DependentUpon>Reportes.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Reportes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes.xss">
+      <DependentUpon>Reportes.xsd</DependentUpon>
+    </None>
+    <None Include="SalidaProducto.xsc">
+      <DependentUpon>SalidaProducto.xsd</DependentUpon>
+    </None>
+    <None Include="SalidaProducto.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SalidaProducto.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SalidaProducto.xss">
+      <DependentUpon>SalidaProducto.xsd</DependentUpon>
+    </None>
+    <None Include="Usuario.xsc">
+      <DependentUpon>Usuario.xsd</DependentUpon>
+    </None>
+    <None Include="Usuario.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Usuario.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Usuario.xss">
+      <DependentUpon>Usuario.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
